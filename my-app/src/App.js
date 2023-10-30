@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import StatelessFunctionalComponent from "./components/StatelessFunctionalComponent";
+import StatefulClassComponent from "./components/StatefulClassComponent";
+import StatelessWithHooks from "./components/StatelessWithHooks";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <pre>Stateless Function Component</pre>
+      <StatelessFunctionalComponent name="Joe" />
+      <hr />
+      <pre>Statefull Class Component</pre>
+      <StatefulClassComponent name="Jamie" />
+      <hr />
+      <pre>Stateless with Hooks</pre>
+      <StatelessWithHooks name="Jenny" />
+    </>
   );
 }
 
