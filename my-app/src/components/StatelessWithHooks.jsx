@@ -13,9 +13,11 @@ export default function StatelessWithHooks(props) {
   }
 
   function toggleColor() {
-    setColor((prevState) => {
-      return prevState === "red" ? "blue" : "red";
-    });
+    // setColor((prevState) => {
+    //   return prevState === "red" ? "blue" : "red";
+    // });
+
+    setColor(color === "red" ? "blue" : "red");
   }
 
   return (
