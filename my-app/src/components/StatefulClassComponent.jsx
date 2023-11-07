@@ -34,7 +34,9 @@ export default class StatefulClassComponent extends React.Component {
         <h2>Click {this.state.count} times</h2>
         <button onClick={this.setCount}>Add 1</button>
         <button onClick={this.takeAway}>Subtract 1</button>
-        <h2>Toggle Color: {this.state.color}</h2>
+        <h2 style={{ color: this.state.color }}>
+          Toggle Color: {this.state.color}
+        </h2>
         <button onClick={this.toggleColor}>Toggle Color</button>
       </div>
     );
